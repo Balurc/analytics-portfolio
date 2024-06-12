@@ -1,0 +1,105 @@
+site_name: Marketing Analytics
+# site_url: https://james-willett.github.io/mkdocs-material-youtube-tutorial/
+
+# GitHub repo
+repo_url: https://github.com/Balurc/analytics-portfolio
+repo_name: GitHub
+
+theme:
+  name: material
+
+  font:
+    text: Roboto
+    code: Fira Code
+  
+  favicon: assets/img/logo.png
+  logo: assets/img/logo.png
+
+  icon:
+    repo: fontawesome/brands/github
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: indigo
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: indigo
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: indigo
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+# extra_css:
+#   - stylesheets/extra.css
+
+plugins:
+  - social
+  - search
+
+
+# Pages Navigations
+nav:
+  - Preface: 'index.md'
+
+  - Campaign Analytics:
+    - 'campaign-analytics/README.md'
+    - Case 1: 'campaign-analytics/case-1/README.md'
+    - Case 2: 'campaign-analytics/case-2/README.md'
+  
+  - Customer Segmentation:
+    - 'customer-segmentation/README.md'
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Balurc
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@baluramachandra90
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/baluramachandra/
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/Balurc"  target="_blank" rel="noopener">Balu Rama Chandra</a>
